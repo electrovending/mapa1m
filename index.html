@@ -191,7 +191,7 @@
             alertTable.innerHTML = '';
 
             // Mostrar las 4 monedas con mayor aumento
-            for (let i = 0; i < Math.min(6, positiveSymbols.length); i++) {
+            for (let i = 0; i < Math.min(4, positiveSymbols.length); i++) {
                 const row = document.createElement('tr');
                 const symbolCell = document.createElement('td');
                 const percentChangeCell = document.createElement('td');
@@ -235,9 +235,6 @@
 
         // Función para actualizar los datos cada 10 segundos
         setInterval(updateDataForAllPairs, 60000);
-
-        // Actualizar el valor de Bitcoin cada 60 segundos
-        setInterval(updateBTCValue, 60000);
     </script>
 </body>
 </html>
